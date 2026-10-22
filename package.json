@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1",
+    "dev": "node server.mjs",
     "build": "node build.mjs",
-    "preview": "vite preview"
+    "preview": "node server.mjs"
   }
 }
