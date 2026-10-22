@@ -1,21 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#efeee8" />
-    <meta name="description" content="Distinctive clothing and bold branding from vanillakit-brandings. Explore the placeholder collection or enquire about a custom identity." />
-    <meta property="og:title" content="vanillakit-brandings — Wear the sweetness" />
-    <meta property="og:description" content="Distinctive clothing. Bold branding. Creative expression made yours." />
-    <meta property="og:type" content="website" />
-    <title>vanillakit-brandings — Wear the sweetness</title>
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b80012">
+  <meta name="description" content="Vanilla Kit Branding offers logo design, clothing branding, custom printing, clothing, and branded products. Bringing Your Brand to Life.">
+  <meta property="og:title" content="Vanilla Kit Branding — Bringing Your Brand to Life">
+  <meta property="og:description" content="Wear the Sweetness. Clothing, branding, custom printing, and logo design.">
+  <meta property="og:type" content="website">
+  <title>Vanilla Kit Branding — Bringing Your Brand to Life</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Vanilla Kit Branding home">
+      <span class="brand-mark">VK</span>
+      <span class="brand-name">Vanilla Kit<small>Branding</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#shop">Shop</a><a href="#logo-design">Logo Design</a><a href="#branding-services">Branding Services</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Clothing · Logos · Custom Printing</p>
+        <h1 id="hero-title">Bringing Your<br><em>Brand to Life.</em></h1>
+        <p class="welcome">Welcome to Vanilla Kit Branding — where creativity meets style. We design logos, bring brands to life, and offer clothing made for people who want to stand out. Wear the Sweetness.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#shop">Explore Our Clothing</a>
+          <a class="button button-outline-light whatsapp-link" data-message="Hi Vanilla Kit Branding, I am interested in your logo design services. I would like to discuss my idea and get a price quote." href="#">Request a Logo Design</a>
+        </div>
+      </div>
+      <div class="hero-visual"><div class="hero-slogan"><span>Wear the</span><strong>Sweetness.</strong></div></div>
+    </section>
+
+    <section class="services-strip" aria-label="Branding services">
+      <article><span>01</span><h2>Logo Design</h2><p>Custom logo concepts shaped around your idea.</p></article>
+      <article><span>02</span><h2>Clothing Branding</h2><p>Build your brand across clothing and apparel.</p></article>
+      <article><span>03</span><h2>Custom Printing</h2><p>Printing designs onto clothing and branded items.</p></article>
+    </section>
+
+    <section class="section shop-section" id="shop">
+      <div class="section-heading"><div><p class="eyebrow">The Clothing Edit</p><h2>Shop the style.</h2></div><a class="text-link whatsapp-link" data-message="Hi Vanilla Kit Branding, I would like to enquire about your products and services." href="#">Order on WhatsApp <span>↗</span></a></div>
+      <div class="product-grid">
+        <article class="product-card product-wide" data-product="R280">
+          <div class="product-media image-frame"><img src="images/r280-tshirt-ad.jpg" alt="R280 Vanilla Kit T-shirt advertisement showing front and back designs and six colour options" data-missing="Add the R280 Vanilla Kit T-shirt advertisement as images/r280-tshirt-ad.jpg"></div>
+          <div class="product-content"><p class="product-label">Vanilla Kit T-shirt</p><div class="product-title-row"><h3>Vanilla Kit T-shirt</h3><strong>R280</strong></div><p>This T-shirt features the Vanilla Kit design and is available in six colours.</p><fieldset class="colour-picker" data-colours="Black,Red,Cream,Gray,Pink,White"><legend>Select colour</legend></fieldset><button class="button button-dark order-button" type="button" data-name="Vanilla Kit T-shirt — R280" data-price="R280" data-kind="tshirt280">Order on WhatsApp</button></div>
+        </article>
+
+        <article class="product-card" data-product="R350">
+          <div class="product-media image-frame"><img src="images/g5-luffy-collection.jpg" alt="Vanilla Kit x G5 Luffy T-shirt collection advertisement" data-missing="Add the Vanilla Kit x G5 Luffy collection image as images/g5-luffy-collection.jpg"></div>
+          <div class="product-content"><p class="product-label">Vanilla Kit x G5 Luffy</p><div class="product-title-row"><h3>G5 Luffy T-shirt</h3><strong>R350</strong></div><p>Vanilla Kit x G5 Luffy collection T-shirt.</p><fieldset class="colour-picker" data-colours="Black,White,Cream"><legend>Select colour</legend></fieldset><button class="button button-dark order-button" type="button" data-name="Vanilla Kit x G5 Luffy T-shirt — R350" data-price="R350" data-kind="tshirt350">Order on WhatsApp</button></div>
+        </article>
+
+        <article class="product-card" data-product="Beanie">
+          <div class="product-media image-frame"><img src="images/beanie-ad.jpg" alt="Vanilla Kit beanie advertisement" data-missing="Add the Vanilla Kit beanie advertisement as images/beanie-ad.jpg"></div>
+          <div class="product-content"><p class="product-label">Vanilla Kit Beanies</p><div class="product-title-row"><h3>Beanie</h3><strong>R150</strong></div><fieldset class="colour-picker" data-colours="Red,Black,Blue,Pink,White,Yellow,Gray"><legend>Select colour</legend></fieldset><button class="button button-dark order-button" type="button" data-name="Vanilla Kit Beanie — R150" data-price="R150" data-kind="beanie">Order on WhatsApp</button></div>
+        </article>
+
+        <article class="product-card" data-product="Cap">
+          <div class="product-media image-frame"><img src="images/cap-ad.jpg" alt="Vanilla Kit cap advertisement" data-missing="Add the Vanilla Kit cap advertisement as images/cap-ad.jpg"></div>
+          <div class="product-content"><p class="product-label">Vanilla Kit Caps</p><div class="product-title-row"><h3>Cap</h3><strong>R120</strong></div><fieldset class="colour-picker" data-colours="Red,Black,Blue,Pink,White,Yellow,Gray"><legend>Select colour</legend></fieldset><button class="button button-dark order-button" type="button" data-name="Vanilla Kit Cap — R120" data-price="R120" data-kind="cap">Order on WhatsApp</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection-section" aria-labelledby="collection-title">
+      <div class="collection-copy"><p class="eyebrow light">Latest Collection</p><h2 id="collection-title">Vanilla Kit<br>x G5 Luffy</h2><p>Explore the supplied collection artwork and enquire about available designs, sizes, and ordering details.</p><a class="button button-white whatsapp-link" data-message="Hi Vanilla Kit Branding, I am interested in the Vanilla Kit x G5 Luffy collection. Please tell me about the available designs, sizes, and ordering details." href="#">Enquire About This Collection</a></div>
+      <div class="collection-image image-frame"><img src="images/g5-luffy-collection.jpg" alt="Vanilla Kit x G5 Luffy featured collection artwork" data-missing="Add the Vanilla Kit x G5 Luffy collection image as images/g5-luffy-collection.jpg"></div>
+    </section>
+
+    <section class="section branding-section" id="logo-design">
+      <div class="branding-image image-frame"><img src="images/branding-contact-card.jpg" alt="Vanilla Kit Branding business contact card and brand artwork" data-missing="Add the Vanilla Kit branding and contact card as images/branding-contact-card.jpg"></div>
+      <div class="branding-copy" id="branding-services"><p class="eyebrow">Logo Design &amp; Branding Services</p><h2>Make your brand<br><em>impossible to ignore.</em></h2><p>Contact Vanilla Kit Branding for custom logo design, clothing branding, custom printing, and printing designs onto clothing.</p><ul><li>Custom logo design</li><li>Clothing branding</li><li>Custom printing</li><li>Printing designs onto clothing</li></ul><a class="button button-red whatsapp-link" data-message="Hi Vanilla Kit Branding, I am interested in your logo design services. I would like to discuss my idea and get a price quote." href="#">Request a Logo Design</a></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div><p class="eyebrow">About Vanilla Kit</p><h2>Where creativity<br>meets style.</h2></div>
+      <div class="about-copy"><p>Vanilla Kit Branding is built around creativity, clothing, and helping brands stand out. From custom logo design to branded clothing and our own fashion products, our goal is to bring ideas to life with style and quality.</p><div class="slogans"><strong>Bringing Your Brand to Life.</strong><strong>Wear the Sweetness.</strong></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow light">Talk to Vanilla Kit</p><h2>Let’s bring it<br>to life.</h2></div>
+      <div class="contact-details"><a class="contact-row" href="https://wa.me/27632455006" target="_blank" rel="noopener"><span>WhatsApp</span><strong>063 245 5006 ↗</strong></a><a class="contact-row" href="mailto:madisengmahlatse6@gmail.com"><span>Email</span><strong>madisengmahlatse6@gmail.com ↗</strong></a><div class="contact-row"><span>Facebook</span><strong>lucky mahlatse (vanilla)</strong></div><div class="contact-row"><span>Instagram</span><strong>vanilla</strong></div></div>
+      <a class="button button-white whatsapp-link" data-message="Hi Vanilla Kit Branding, I would like to enquire about your products and services." href="#">Contact on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">VK</span><span class="brand-name">Vanilla Kit<small>Branding</small></span></a><p>Bringing Your Brand to Life. · Wear the Sweetness.</p><p>WhatsApp only: 063 245 5006</p></footer>
+  <a class="floating-whatsapp whatsapp-link" data-message="Hi Vanilla Kit Branding, I would like to enquire about your products and services." href="#" aria-label="Contact Vanilla Kit Branding on WhatsApp"><span>WhatsApp</span><strong>↗</strong></a>
+</body>
 </html>
